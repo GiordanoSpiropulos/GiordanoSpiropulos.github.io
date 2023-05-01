@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "name": "Início",
+      "url": "#home"
+    },
+    {
+      "name": "Habilidades",
+      "url": "#skills"
+    },
+    {
+      "name": "Projetos",
+      "url": "#projects"
+    }
+  ]
+}
