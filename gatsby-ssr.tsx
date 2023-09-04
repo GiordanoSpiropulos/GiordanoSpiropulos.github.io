@@ -3,6 +3,19 @@ import { GatsbyBrowser } from "gatsby";
 
 import { Layout } from "./src/common/components";
 
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <link
+      rel="preload"
+      href="/fonts/RobotoMono-VariableFont_wght.ttf"
+      as="font"
+      type="font/ttf"
+      crossOrigin="anonymous"
+      key="robotoFont"
+    />,
+  ]);
+};
+
 // Adds a class name to the body element
 
 // Wraps every page in a component

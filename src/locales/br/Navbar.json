@@ -12,5 +12,22 @@
       "name": "Projetos",
       "url": "#projects"
     }
+  ],
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/giordano-spiropulos-8b022419a/",
+      "alt": "Ícone do LinkedIn"
+    },
+    {
+      "name": "Github",
+      "url": "https://github.com/GiordanoSpiropulos",
+      "alt": "Ícone do Github"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:giordanospiropulos@gmail.com",
+      "alt": "Ícone do Email"
+    }
   ]
 }
