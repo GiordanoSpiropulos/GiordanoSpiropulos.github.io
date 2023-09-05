@@ -3,9 +3,11 @@ import * as S from "./styles";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 import { StaticImage } from "gatsby-plugin-image";
 import { NavbarLink, NavbarSocial } from "./navbar-types";
+import { Dropdown } from "../index";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [menuVisible, setMenuVisible] = useState(false);
 
   const { t } = useTranslation();
 
@@ -22,20 +24,58 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const toggleMenu = () => {
+    console.log("clcik");
+    setMenuVisible(!menuVisible);
+  };
   return (
     <S.Navbar isScrolled={scrolled}>
-      <S.NavBrand>
-        <S.NavBrandName>
-          <b>Giordano</b> Spiropulos
-        </S.NavBrandName>
-      </S.NavBrand>
+      <S.NavHamburguerMenu>
+        <button onClick={toggleMenu}>
+          <StaticImage
+            src="../../../images/icons/hamburger-menu.svg"
+            alt={"Hamburguer menu"}
+            height={32}
+            width={32}
+          />
+        </button>
+        <Dropdown isMenuVisible={menuVisible}>
+          <S.NavBrand>
+            <S.NavBrandName>
+              <b>Giordano</b> Spiropulos
+            </S.NavBrandName>
+            <S.GreenSeparator />
+          </S.NavBrand>
+          <S.NavListMenu>
+            {links.map((link) => (
+              <>
+                <li key={link.name}>
+                  <a href={link.url}>{link.name}</a>
+                </li>
+                <S.GreenSeparator />
+              </>
+            ))}
+          </S.NavListMenu>
+        </Dropdown>
+      </S.NavHamburguerMenu>
+
+      <S.NavInfo>
+        <S.NavBrand>
+          <S.NavBrandName>
+            <b>Giordano</b> Spiropulos
+          </S.NavBrandName>
+        </S.NavBrand>
+      </S.NavInfo>
       <S.NavList>
         {links.map((link) => (
-          <li key={link.name}>
-            <a href={link.url}>{link.name}</a>
-          </li>
+          <>
+            <li key={link.name}>
+              <a href={link.url}>{link.name}</a>
+            </li>
+          </>
         ))}
       </S.NavList>
+
       <S.SocialMediaContainer>
         <a href={socials[0].url} target="_blank" rel="noopener noreferrer">
           <S.SocialInfo>
