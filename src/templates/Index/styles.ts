@@ -12,15 +12,35 @@ const orbit = keyframes`
 
 export const IndexMain = styled.main`
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const DummyDiv = styled.div`
+  @media (max-width: 992px) {
+    display: none;
+  }
+`;
+
+export const InfoContainer = styled.div`
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 0 16px;
+  }
 `;
 
 export const IndexContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin-top: 20%;
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    margin-top: 5%;
+  }
 `;
 
 export const GreenContainer = styled.div`
@@ -36,6 +56,9 @@ export const ImageContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-right: 10%;
+  @media (max-width: 992px) {
+    display: none;
+  }
 `;
 
 export const BackgroundCircle = styled.div`
@@ -75,6 +98,11 @@ export const PresentationContainer = styled.div`
 
   &:last-child {
     color: #86878f;
+  }
+
+  @media (max-width: 992px) {
+    grid-template-rows: 1fr;
+    height: 50%;
   }
 `;
 
