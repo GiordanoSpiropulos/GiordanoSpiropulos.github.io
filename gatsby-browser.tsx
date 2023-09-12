@@ -1,6 +1,5 @@
 import React from "react";
 import { GatsbyBrowser } from "gatsby";
-import { GlobalStyle } from "./globalStyle";
 import { Layout } from "./src/common/components";
 
 // Adds a class name to the body element

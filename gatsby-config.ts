@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+const path = require("path");
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -7,11 +8,13 @@ const config: GatsbyConfig = {
   },
   graphqlTypegen: true,
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-sitemap",
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-root-import`,
+    `gatsby-plugin-tsconfig-paths`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
