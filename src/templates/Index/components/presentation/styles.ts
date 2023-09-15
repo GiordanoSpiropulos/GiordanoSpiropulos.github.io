@@ -10,6 +10,15 @@ const orbit = keyframes`
   }
 `;
 
+export const Presentation = styled.div`
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+  }
+`;
 export const DummyDiv = styled.div`
   @media (max-width: 992px) {
     display: none;

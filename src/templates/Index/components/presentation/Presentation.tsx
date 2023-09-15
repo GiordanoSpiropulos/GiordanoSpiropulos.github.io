@@ -1,33 +1,35 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import * as S from "./styles";
-import { IndexAboutMe } from "./presentation-types";
+import { PresentationLocale } from "./presentation-types";
 import { Typewriter } from "@components/index";
 import { StaticImage } from "gatsby-plugin-image";
 
 export function Presentation() {
   const { t } = useTranslation();
-  const indexAboutMe: IndexAboutMe[] = t("aboutMe", { returnObjects: true });
+  const indexAboutMe: PresentationLocale = t("presentation", {
+    returnObjects: true,
+  });
   const todayYear = new Date().getFullYear();
   const workStarted = new Date("09/10/2020").getFullYear();
 
   const imagePath = "../../../../../static/images/";
   return (
-    <>
+    <S.Presentation>
       <S.IndexContainer>
         <S.DummyDiv></S.DummyDiv>
         <S.InfoContainer>
           <S.GreenContainer>
-            <span>{indexAboutMe[0].cargo}</span>
+            <span>{indexAboutMe.cargo}</span>
           </S.GreenContainer>
           <S.PresentationContainer>
             <S.PresentationInnerContainer>
               <Typewriter
                 delay={100}
-                text={indexAboutMe[0].presentation}
+                text={indexAboutMe.presentation}
                 fontSize="32px"
               ></Typewriter>
-              <span>{indexAboutMe[0].presentation2}</span>
+              <span>{indexAboutMe.presentation2}</span>
             </S.PresentationInnerContainer>
             <S.PresentationExperience>
               <span>
@@ -35,7 +37,7 @@ export function Presentation() {
                   {(todayYear - workStarted).toString()}{" "}
                 </S.WhiteExperienceBold>
               </span>
-              <span>{indexAboutMe[0].experience}</span>
+              <span>{indexAboutMe.experience}</span>
             </S.PresentationExperience>
           </S.PresentationContainer>
         </S.InfoContainer>
@@ -77,6 +79,6 @@ export function Presentation() {
           />
         </S.BackgroundCircle>
       </S.ImageContainer>
-    </>
+    </S.Presentation>
   );
 }

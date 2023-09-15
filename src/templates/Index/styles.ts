@@ -11,13 +11,8 @@ const orbit = keyframes`
 `;
 
 export const IndexMain = styled.main`
-  display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  @media (max-width: 992px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const DummyDiv = styled.div`

@@ -1,10 +1,74 @@
 {
-  "aboutMe": [
-    {
-      "cargo": "Desenvolvedor Front-End",
-      "presentation": "Olá, meu nome é Giordano!",
-      "presentation2": "Sou um desenvolvedor front-end e amo o que faço!",
-      "experience": "anos de experiência"
+  "presentation": {
+    "cargo": "Desenvolvedor Front-End",
+    "presentation": "Olá, meu nome é Giordano!",
+    "presentation2": "Sou um desenvolvedor front-end e amo o que faço!",
+    "experience": "anos de experiência"
+  },
+  "aboutMe": {
+    "whatIDoCards": [
+      {
+        "title": "Websites",
+        "extra": "Desenvolvo páginas Webs responsivas e rápidas."
+      },
+      {
+        "title": "Mobile",
+        "extra": "Desenvolvo aplicações mobiles, desde a etapa de criação até sua publicação."
+      },
+      {
+        "title": "SEO",
+        "extra": "Cuido e otimizo da indexação do site nas engines de pesquisa."
+      }
+    ],
+    "whoIAm": {
+      "title": "Seja bem-vindo!",
+      "subtitle": "Um pouco mais sobre mim . . .",
+      "infoAboutMe": "Sou formado na Faculdade de Tecnologia de Ribeirão Preto (FATEC - RP) e desde o ínicio me apaixonei por Front-End. Com isso fui estudando e aprendendo até conseguir meu primeiro emprego. Assim, hoje, possuo várias experiências em diversas tecnologias voltadas para essa área e continuo querendo aprimora-las."
     }
-  ]
+  },
+  "experience": {
+    "title": "Minhas experiências",
+    "timeline": [
+      {
+        "id": 0,
+        "title": "Estagiário em desenvolvimento de software",
+        "subtitle": "Competências: React Native,Redux e Sagas, .NET Core.",
+        "description": "Acompanhamento e início dos estudos para criação de um aplicativo utilizando React Native focado em vendas de ingressos e produtos para shows e casas noturnas",
+        "date": "2020",
+        "dateRange": "Setembro de 2020 - Janeiro de 2021"
+      },
+      {
+        "id": 1,
+        "title": "Desenvolvedor Júnior",
+        "subtitle": "Competências: Flutter, .NET Core.",
+        "description": "Desenvolvimento de um aplicativo utilizando Flutter para competições de Tênis.",
+        "date": "2021",
+        "dateRange": "Janeiro de 2021 - Fevereiro de 2021"
+      },
+      {
+        "id": 2,
+        "title": "Desenvolvedor Júnior",
+        "subtitle": "Competências: React, Redux, Sagas, NextJS e Storybooks",
+        "description": "Desenvolvimento de sistemas para prefeituras, inicialmente dando manutenção a um sistema antigo. Criação de um novo padrão e sites utilizando NextJS com Storybooks.",
+        "date": "2021",
+        "dateRange": "Fevereiro de 2021 - Dezembro de 2021"
+      },
+      {
+        "id": 3,
+        "title": "Desenvolvedor Pleno",
+        "subtitle": "Competências: Angular e .NET Core",
+        "description": "Desenvolvimento e manutenção de um site para corretora e gerenciamento do mercado.",
+        "date": "2022",
+        "dateRange": "Fevereiro de 2022 - Janeiro de 2023"
+      },
+      {
+        "id": 4,
+        "title": "Desenvolvedor Pleno",
+        "subtitle": "Competências: NextJS, React, Flutter e React Native.",
+        "description": "Atuação em projetos internos da empresa, com desenvolvimento do novo site da mesma utilizando NextJS. Manutenção de aplicativos utilizando React Native e a criação de um novo aplicativo de fotos utilizando Flutter.",
+        "date": "2023",
+        "dateRange": "Janeiro de 2023 - Agosto de 2023"
+      }
+    ]
+  }
 }

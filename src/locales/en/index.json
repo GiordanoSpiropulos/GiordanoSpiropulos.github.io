@@ -1,10 +1,29 @@
 {
-  "aboutMe": [
-    {
-      "cargo": "Front-End Developer",
-      "presentation": "Hi, my name is Giordano!",
-      "presentation2": "And I'am a front-end developer and I love what I do!",
-      "experience": "years of experience"
+  "presentation": {
+    "cargo": "Front-End Developer",
+    "presentation": "Hi, my name is Giordano!",
+    "presentation2": "And I'am a front-end developer and I love what I do!",
+    "experience": "years of experience"
+  },
+  "aboutMe": {
+    "whatIDoCards": [
+      {
+        "title": "Websites",
+        "extra": "I develop responsive and fast web pages."
+      },
+      {
+        "title": "Mobile",
+        "extra": "I develop mobile applications, from the creation stage to publication."
+      },
+      {
+        "title": "SEO",
+        "extra": "I take care of and optimize the website’s indexing in search engines."
+      }
+    ],
+    "whoIAm": {
+      "title": "Welcome!",
+      "subtitle": "A little about me . . .",
+      "infoAboutMe": "I graduated from the Faculdade de Tecnologia de Ribeirão Preto (FATEC - RP) and from the beginning I fell in love with Front-End. So I studied and learned until I got my first job. So, today, I have several experiences in different technologies focused on this area and I continue to want to improve them."
     }
-  ]
+  }
 }
