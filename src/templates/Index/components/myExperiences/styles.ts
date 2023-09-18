@@ -4,6 +4,7 @@ export const MyExperiencesContainer = styled.div`
   flex-direction: column;
   min-height: 100vh;
   background-color: #25262a;
+  padding-bottom: 20px;
   .vertical-timeline-element-date {
     color: #fff;
   }

@@ -70,5 +70,102 @@
         "dateRange": "Janeiro de 2023 - Agosto de 2023"
       }
     ]
+  },
+  "skills": {
+    "title": "Minhas habilidades",
+    "skillsListTitle": [
+      {
+        "id": 0,
+        "title": "Frontend"
+      },
+      {
+        "id": 1,
+        "title": "Backend"
+      }
+    ],
+    "skillsListFrontEnd": [
+      {
+        "id": 0,
+        "skillDescription": "HTML"
+      },
+      {
+        "id": 1,
+        "skillDescription": "CSS"
+      },
+      {
+        "id": 2,
+        "skillDescription": "JavaScript"
+      },
+      {
+        "id": 3,
+        "skillDescription": "TypeScript"
+      },
+      {
+        "id": 4,
+        "skillDescription": "React"
+      },
+      {
+        "id": 5,
+        "skillDescription": "Angular"
+      },
+      {
+        "id": 6,
+        "skillDescription": "NextJS"
+      },
+      {
+        "id": 7,
+        "skillDescription": "Gatsby"
+      },
+      {
+        "id": 8,
+        "skillDescription": "React Native"
+      },
+      {
+        "id": 9,
+        "skillDescription": "Flutter"
+      },
+      {
+        "id": 10,
+        "skillDescription": "Jasmine/Jest"
+      },
+      {
+        "id": 11,
+        "skillDescription": "Storybooks"
+      }
+    ],
+    "skillsListBackEnd": [
+      {
+        "id": 0,
+        "skillDescription": ".NET Core"
+      },
+      {
+        "id": 1,
+        "skillDescription": "Django Rest"
+      },
+      {
+        "id": 2,
+        "skillDescription": "MySQL"
+      },
+      {
+        "id": 3,
+        "skillDescription": "Oracle"
+      },
+      {
+        "id": 4,
+        "skillDescription": "Postgre"
+      },
+      {
+        "id": 5,
+        "skillDescription": "MongoDB"
+      },
+      {
+        "id": 6,
+        "skillDescription": "API RESTful"
+      },
+      {
+        "id": 7,
+        "skillDescription": "GraphQL"
+      }
+    ]
   }
 }

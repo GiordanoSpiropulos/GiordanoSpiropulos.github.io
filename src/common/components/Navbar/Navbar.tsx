@@ -25,7 +25,6 @@ export function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    console.log("clcik");
     setMenuVisible(!menuVisible);
   };
   return (
