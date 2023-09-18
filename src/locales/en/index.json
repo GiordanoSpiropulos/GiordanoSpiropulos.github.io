@@ -25,5 +25,50 @@
       "subtitle": "A little about me . . .",
       "infoAboutMe": "I graduated from the Faculdade de Tecnologia de Ribeirão Preto (FATEC - RP) and from the beginning I fell in love with Front-End. So I studied and learned until I got my first job. So, today, I have several experiences in different technologies focused on this area and I continue to want to improve them."
     }
+  },
+  "experience": {
+    "title": "My Experiences",
+    "timeline": [
+      {
+        "id": 0,
+        "title": "Software Developer trainee",
+        "subtitle": "Skills: React Native, Redux, Sagas, .NET Core.",
+        "description": "Monitoring and beginning studies to create an application using React Native focused on selling tickets and products for shows and nightclubs",
+        "date": "2020",
+        "dateRange": "September 2020 - January 2021"
+      },
+      {
+        "id": 1,
+        "title": "Junior Software Developer",
+        "subtitle": "Skills: Flutter, .NET Core.",
+        "description": "Development of an application using Flutter for Tennis competitions.",
+        "date": "2021",
+        "dateRange": "January 2021 - February 2021"
+      },
+      {
+        "id": 2,
+        "title": "Junior Software Developer",
+        "subtitle": "Skills: React, Redux, Sagas, NextJS and Storybooks",
+        "description": "Development of systems for city halls, initially maintaining an old system. Creation of a new pattern and websites using NextJS with Storybooks.",
+        "date": "2021",
+        "dateRange": "February 2021 - December 2021"
+      },
+      {
+        "id": 3,
+        "title": "Mid Software Developer ",
+        "subtitle": "Skills: Angular and .NET Core",
+        "description": "Development and maintenance of a website for brokerage and market management.",
+        "date": "2022",
+        "dateRange": "February 2022 - January  2023"
+      },
+      {
+        "id": 4,
+        "title": "Mid Software Developer",
+        "subtitle": "Skills: NextJS, React, Flutter and React Native.",
+        "description": "Expertise in internal company projects, developing the company's new website using NextJS. Application maintenance using React Native and creation of a new photo application using Flutter.",
+        "date": "2023",
+        "dateRange": "January 2023 - August 2023"
+      }
+    ]
   }
 }
