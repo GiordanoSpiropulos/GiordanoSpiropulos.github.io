@@ -37,6 +37,18 @@ export function Skills() {
             ))}
           </S.SkillsList>
         </S.SkillsInfoContainer>
+        <S.SkillsInfoContainer>
+          <S.SkillsSubTitle>
+            {indexSkills.skillsListTitle[2].title}
+          </S.SkillsSubTitle>
+          <S.SkillsList>
+            {indexSkills.skillsListOther.map((skills) => (
+              <S.SkillsListItem key={skills.id}>
+                {skills.skillDescription}
+              </S.SkillsListItem>
+            ))}
+          </S.SkillsList>
+        </S.SkillsInfoContainer>
       </S.SkillsInnerContainer>
     </S.SkillsContainer>
   );

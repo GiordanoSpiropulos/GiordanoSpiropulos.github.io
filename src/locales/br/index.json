@@ -65,7 +65,7 @@
         "id": 4,
         "title": "Desenvolvedor Pleno",
         "subtitle": "Competências: NextJS, React, Flutter e React Native.",
-        "description": "Atuação em projetos internos da empresa, com desenvolvimento do novo site da mesma utilizando NextJS. Manutenção de aplicativos utilizando React Native e a criação de um novo aplicativo de fotos utilizando Flutter.",
+        "description": "Atuação em projetos internos, com desenvolvimento do novo site da empresa utilizando NextJS. Manutenção de aplicativos utilizando React Native e a criação de um novo aplicativo de fotos utilizando Flutter.",
         "date": "2023",
         "dateRange": "Janeiro de 2023 - Agosto de 2023"
       }
@@ -81,6 +81,10 @@
       {
         "id": 1,
         "title": "Backend"
+      },
+      {
+        "id": 2,
+        "title": "Outros"
       }
     ],
     "skillsListFrontEnd": [
@@ -165,6 +169,28 @@
       {
         "id": 7,
         "skillDescription": "GraphQL"
+      }
+    ],
+    "skillsListOther": [
+      {
+        "id": 0,
+        "skillDescription": "Prettier/ESLint"
+      },
+      {
+        "id": 1,
+        "skillDescription": "Metodologia Agile"
+      },
+      {
+        "id": 2,
+        "skillDescription": "Pixel Perfect com Figma"
+      },
+      {
+        "id": 3,
+        "skillDescription": "SEO"
+      },
+      {
+        "id": 4,
+        "skillDescription": "Deploy mobile"
       }
     ]
   }

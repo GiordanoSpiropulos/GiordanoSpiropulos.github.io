@@ -3,6 +3,7 @@ export interface SkillsLocale {
   skillsListTitle: SkillsListTitle[];
   skillsListFrontEnd: SkillsList[];
   skillsListBackEnd: SkillsList[];
+  skillsListOther: SkillsList[];
 }
 
 export interface SkillsList {

@@ -166,6 +166,28 @@
         "id": 7,
         "skillDescription": "GraphQL"
       }
+    ],
+    "skillsListOther": [
+      {
+        "id": 0,
+        "skillDescription": "Prettier/ESLint"
+      },
+      {
+        "id": 1,
+        "skillDescription": "Agile Methodology"
+      },
+      {
+        "id": 2,
+        "skillDescription": "Pixel Perfect with Figma"
+      },
+      {
+        "id": 3,
+        "skillDescription": "SEO"
+      },
+      {
+        "id": 4,
+        "skillDescription": "Deploy mobile"
+      }
     ]
   }
 }

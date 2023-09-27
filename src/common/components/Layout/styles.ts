@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, css } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -23,10 +23,13 @@ a{
 
 `;
 
-export const WhiteContainer = styled.div`
-  width: 100%;
+export const column = css`
   display: flex;
   flex-direction: column;
+`;
+export const WhiteContainer = styled.div`
+  ${column}
+  width: 100%;
   @media (min-width: 1366px) {
     max-width: 1366px;
     margin: 0px auto;

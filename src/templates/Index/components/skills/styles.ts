@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 export const SkillsContainer = styled.div`
   display: flex;
@@ -16,13 +16,8 @@ export const SkillsTitle = styled.h2`
 
 export const SkillsInnerContainer = styled.div`
   display: grid;
-
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 20px;
-
-  @media (max-width: 992px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const SkillsInfoContainer = styled.div`
@@ -48,6 +43,9 @@ export const SkillsList = styled.ul`
   margin: 0px;
   padding: 0px;
 
+  width: 93%;
+  justify-self: center;
+  align-self: center;
   @media (max-width: 992px) {
     height: unset;
   }
