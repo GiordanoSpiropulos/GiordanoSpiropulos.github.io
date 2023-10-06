@@ -72,121 +72,59 @@
     ]
   },
   "skills": {
-    "title": "My Skills",
-    "skillsListTitle": [
+    "title": "My Skills & Experience",
+    "subtitle": "My main focus is front-end development (mobile and web).",
+    "description": "Landing Pages, components, librarys, mobile applications and plugins. I have experience in FullStack using .Net Core and Node.",
+    "skillsList": [
       {
         "id": 0,
-        "title": "Frontend"
-      },
-      {
-        "id": 1,
-        "title": "Backend"
-      }
-    ],
-    "skillsListFrontEnd": [
-      {
-        "id": 0,
-        "skillDescription": "HTML"
-      },
-      {
-        "id": 1,
-        "skillDescription": "CSS"
-      },
-      {
-        "id": 2,
-        "skillDescription": "JavaScript"
-      },
-      {
-        "id": 3,
-        "skillDescription": "TypeScript"
-      },
-      {
-        "id": 4,
+        "skillImageName": "react",
         "skillDescription": "React"
       },
       {
+        "id": 1,
+        "skillImageName": "js",
+        "skillDescription": "Javascript"
+      },
+      {
+        "id": 2,
+        "skillImageName": "html",
+        "skillDescription": "HTML5"
+      },
+      {
+        "id": 3,
+        "skillImageName": "css",
+        "skillDescription": "CSS3"
+      },
+      {
+        "id": 4,
+        "skillImageName": "storybook",
+        "skillDescription": "Storybook"
+      },
+      {
         "id": 5,
-        "skillDescription": "Angular"
+        "skillImageName": "figma",
+        "skillDescription": "Figma"
       },
       {
         "id": 6,
-        "skillDescription": "NextJS"
-      },
-      {
-        "id": 7,
-        "skillDescription": "Gatsby"
-      },
-      {
-        "id": 8,
-        "skillDescription": "React Native"
-      },
-      {
-        "id": 9,
+        "skillImageName": "flutter",
         "skillDescription": "Flutter"
       },
       {
-        "id": 10,
-        "skillDescription": "Jasmine/Jest"
-      },
-      {
-        "id": 11,
-        "skillDescription": "Storybooks"
-      }
-    ],
-    "skillsListBackEnd": [
-      {
-        "id": 0,
-        "skillDescription": ".NET Core"
-      },
-      {
-        "id": 1,
-        "skillDescription": "Django Rest"
-      },
-      {
-        "id": 2,
-        "skillDescription": "MySQL"
-      },
-      {
-        "id": 3,
-        "skillDescription": "Oracle"
-      },
-      {
-        "id": 4,
-        "skillDescription": "Postgre"
-      },
-      {
-        "id": 5,
-        "skillDescription": "MongoDB"
-      },
-      {
-        "id": 6,
-        "skillDescription": "API RESTful"
-      },
-      {
         "id": 7,
-        "skillDescription": "GraphQL"
-      }
-    ],
-    "skillsListOther": [
-      {
-        "id": 0,
-        "skillDescription": "Prettier/ESLint"
+        "skillImageName": "nextjs",
+        "skillDescription": "NextJS"
       },
       {
-        "id": 1,
-        "skillDescription": "Agile Methodology"
+        "id": 8,
+        "skillImageName": "angular",
+        "skillDescription": "Angular"
       },
       {
-        "id": 2,
-        "skillDescription": "Pixel Perfect with Figma"
-      },
-      {
-        "id": 3,
-        "skillDescription": "SEO"
-      },
-      {
-        "id": 4,
-        "skillDescription": "Deploy mobile"
+        "id": 9,
+        "skillImageName": "gatsby",
+        "skillDescription": "Gatsby"
       }
     ]
   }

@@ -2,12 +2,16 @@ import React from "react";
 import { ValidationError, useForm } from "@formspree/react";
 
 import * as S from "./styles";
+import { useTranslation } from "react-i18next";
+import { ContactFormLocale } from "./contact-form.types";
 
 export function ContactForm() {
   const [state, handleSubmit] = useForm("xleyppbd");
-  if (state.succeeded) {
-    return <div>Thank you for signing up!</div>;
-  }
+  const { t } = useTranslation();
+  const contactFormLocale: ContactFormLocale = t("contactForm", {
+    returnObjects: true,
+  });
+
   return (
     <S.ContactFormContainer>
       <S.ContactFormInnerContainer>
@@ -16,13 +20,15 @@ export function ContactForm() {
             id="email"
             type="email"
             name="email"
-            placeholder="Email"
+            required
+            placeholder={contactFormLocale.fields[0].placeholder}
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
           <S.ContactFormTextArea
             id="message"
             name="message"
-            placeholder="Mensagem"
+            required
+            placeholder={contactFormLocale.fields[1].placeholder}
           />
           <ValidationError
             prefix="Message"
@@ -30,16 +36,26 @@ export function ContactForm() {
             errors={state.errors}
           />
           <S.ContactFormButton type="submit" disabled={state.submitting}>
-            Submit
+            {contactFormLocale.fields[2].placeholder}
           </S.ContactFormButton>
         </S.ContactForm>
         <S.ContactFormInfo>
           <S.ContactFormInfoTitle>
-            Para mais informações . . .
+            {contactFormLocale.title}
           </S.ContactFormInfoTitle>
-          <S.ContactFormInfoSubTitle>
-            Entre em contato comigo!
-          </S.ContactFormInfoSubTitle>
+          <S.ContactFormInfoDescription>
+            {contactFormLocale.description}
+          </S.ContactFormInfoDescription>
+          <S.ContactFormInfoDescription>
+            {contactFormLocale.aditionalDescription}{" "}
+            <S.ContactFormAnchor
+              href="https://www.linkedin.com/in/giordano-spiropulos-8b022419a/"
+              target="_blank"
+            >
+              LinkedIn
+            </S.ContactFormAnchor>
+            .
+          </S.ContactFormInfoDescription>
         </S.ContactFormInfo>
       </S.ContactFormInnerContainer>
     </S.ContactFormContainer>

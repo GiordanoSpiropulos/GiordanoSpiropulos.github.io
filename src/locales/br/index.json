@@ -72,125 +72,75 @@
     ]
   },
   "skills": {
-    "title": "Minhas habilidades",
-    "skillsListTitle": [
+    "title": "Minhas habilidades e experiências",
+    "subtitle": "O principal foco da minha experiência é em desenvolvimento front-end (mobile e web).",
+    "description": "Landing Pages, componentes, bibliotecas, aplicativos e plugins. Também possuo experiência em FullStack em Node e .Net Core",
+    "skillsList": [
       {
         "id": 0,
-        "title": "Frontend"
-      },
-      {
-        "id": 1,
-        "title": "Backend"
-      },
-      {
-        "id": 2,
-        "title": "Outros"
-      }
-    ],
-    "skillsListFrontEnd": [
-      {
-        "id": 0,
-        "skillDescription": "HTML"
-      },
-      {
-        "id": 1,
-        "skillDescription": "CSS"
-      },
-      {
-        "id": 2,
-        "skillDescription": "JavaScript"
-      },
-      {
-        "id": 3,
-        "skillDescription": "TypeScript"
-      },
-      {
-        "id": 4,
+        "skillImageName": "react",
         "skillDescription": "React"
       },
       {
+        "id": 1,
+        "skillImageName": "js",
+        "skillDescription": "Javascript"
+      },
+      {
+        "id": 2,
+        "skillImageName": "html",
+        "skillDescription": "HTML5"
+      },
+      {
+        "id": 3,
+        "skillImageName": "css",
+        "skillDescription": "CSS3"
+      },
+      {
+        "id": 4,
+        "skillImageName": "storybook",
+        "skillDescription": "Storybook"
+      },
+      {
         "id": 5,
-        "skillDescription": "Angular"
+        "skillImageName": "figma",
+        "skillDescription": "Figma"
       },
       {
         "id": 6,
-        "skillDescription": "NextJS"
-      },
-      {
-        "id": 7,
-        "skillDescription": "Gatsby"
-      },
-      {
-        "id": 8,
-        "skillDescription": "React Native"
-      },
-      {
-        "id": 9,
+        "skillImageName": "flutter",
         "skillDescription": "Flutter"
       },
       {
-        "id": 10,
-        "skillDescription": "Jasmine/Jest"
-      },
-      {
-        "id": 11,
-        "skillDescription": "Storybooks"
-      }
-    ],
-    "skillsListBackEnd": [
-      {
-        "id": 0,
-        "skillDescription": ".NET Core"
-      },
-      {
-        "id": 1,
-        "skillDescription": "Django Rest"
-      },
-      {
-        "id": 2,
-        "skillDescription": "MySQL"
-      },
-      {
-        "id": 3,
-        "skillDescription": "Oracle"
-      },
-      {
-        "id": 4,
-        "skillDescription": "Postgre"
-      },
-      {
-        "id": 5,
-        "skillDescription": "MongoDB"
-      },
-      {
-        "id": 6,
-        "skillDescription": "API RESTful"
-      },
-      {
         "id": 7,
-        "skillDescription": "GraphQL"
+        "skillImageName": "nextjs",
+        "skillDescription": "NextJS"
+      },
+      {
+        "id": 8,
+        "skillImageName": "angular",
+        "skillDescription": "Angular"
+      },
+      {
+        "id": 9,
+        "skillImageName": "gatsby",
+        "skillDescription": "Gatsby"
       }
-    ],
-    "skillsListOther": [
+    ]
+  },
+  "contactForm": {
+    "title": "Contato",
+    "description": "Entre em contato comigo para mais informações de projetos ou caso queira conversar!",
+    "aditionalDescription": "Se precisar saber mais sobre mim, você também pode acessar meu ",
+    "fields": [
       {
-        "id": 0,
-        "skillDescription": "Prettier/ESLint"
+        "placeholder": "Email"
       },
       {
-        "id": 1,
-        "skillDescription": "Metodologia Agile"
+        "placeholder": "Mensagem"
       },
       {
-        "id": 2,
-        "skillDescription": "Pixel Perfect com Figma"
-      },
-      {
-        "id": 3,
-        "skillDescription": "SEO"
-      },
-      {
-        "id": 4,
-        "skillDescription": "Deploy mobile"
+        "placeholder": "Enviar"
       }
     ]
   }

@@ -1,14 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-const orbit = keyframes`
-  0% {
-    transform: rotateZ(0deg);
-  }
-
-  100% {
-    transform: rotateZ(-360deg);
-  }
-`;
+import { orbit } from "@animations/index";
+import styled from "styled-components";
 
 export const Presentation = styled.div`
   display: grid;
