@@ -8,7 +8,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `giordano-portfolio`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://giordanospiropulos.github.io`,
   },
   graphqlTypegen: true,
   plugins: [
@@ -41,6 +41,7 @@ const config: GatsbyConfig = {
         react: { useSuspense: false },
         languages: [`en`, `br`],
         defaultLanguage: `br`,
+        siteUrl: "https://giordanospiropulos.github.io",
         pages: [
           {
             matchPath: "/:lang?/",
