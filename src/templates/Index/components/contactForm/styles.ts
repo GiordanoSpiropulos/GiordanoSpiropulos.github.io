@@ -28,6 +28,8 @@ export const ContactFormContainer = styled.div`
 
 export const ContactFormInnerContainer = styled.div`
   display: grid;
+  margin-top: 80px;
+
   height: 100%;
   grid-template-columns: 1fr 1fr;
 

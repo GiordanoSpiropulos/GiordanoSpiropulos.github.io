@@ -16,6 +16,8 @@ export const MyExperiencesContainer = styled.div`
 export const MyExperiencesTitle = styled.h2`
   color: #fff;
   font-size: 28px;
+  margin-top: 80px;
+
   align-self: center;
 `;
 

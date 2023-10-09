@@ -14,7 +14,7 @@ export function MyExperiences() {
     returnObjects: true,
   });
   return (
-    <S.MyExperiencesContainer>
+    <S.MyExperiencesContainer id="experience">
       <S.MyExperiencesTitle>{experienceLocale.title}</S.MyExperiencesTitle>
       <VerticalTimeline lineColor="#64f4ac">
         {experienceLocale.timeline.map((element) => {

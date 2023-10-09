@@ -6,7 +6,7 @@ const IndexPage: React.FC<PageProps<Queries.IndexPageQueryQuery>> = (props) => {
   return <IndexTemplate></IndexTemplate>;
 };
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <title>Giordano Portfolio</title>;
 
 export const query = graphql`
   query IndexPageQuery($language: String!) {

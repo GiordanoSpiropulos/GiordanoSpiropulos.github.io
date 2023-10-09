@@ -52,11 +52,11 @@ export function Skills() {
       `}
       render={(data: any) => {
         return (
-          <S.SkillsContainer ref={listRef}>
+          <S.SkillsContainer id="skills">
             <S.SkillsTitle>{indexSkills.title}</S.SkillsTitle>
             <S.SkillsDescription>{indexSkills.subtitle}</S.SkillsDescription>
             <S.SkillsDescription>{indexSkills.description}</S.SkillsDescription>
-            <S.SkillsInnerContainer>
+            <S.SkillsInnerContainer ref={listRef}>
               <S.SkillsInfoContainer>
                 <S.SkillsList>
                   {indexSkills.skillsList.map((skills, index) => (

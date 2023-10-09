@@ -1,6 +1,10 @@
 import type { GatsbyConfig } from "gatsby";
 const path = require("path");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `giordano-portfolio`,

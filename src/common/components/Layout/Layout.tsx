@@ -7,7 +7,6 @@ export function Layout({ children }: any) {
     <>
       <S.GlobalStyle />
       <Navbar />
-
       {children}
     </>
   );

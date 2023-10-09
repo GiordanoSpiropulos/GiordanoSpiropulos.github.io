@@ -6,14 +6,14 @@ import { useTranslation } from "react-i18next";
 import { ContactFormLocale } from "./contact-form.types";
 
 export function ContactForm() {
-  const [state, handleSubmit] = useForm("xleyppbd");
+  const [state, handleSubmit] = useForm(`${process.env.GATSBY_FORM_KEY}`);
   const { t } = useTranslation();
   const contactFormLocale: ContactFormLocale = t("contactForm", {
     returnObjects: true,
   });
 
   return (
-    <S.ContactFormContainer>
+    <S.ContactFormContainer id="contact">
       <S.ContactFormInnerContainer>
         <S.ContactForm onSubmit={handleSubmit}>
           <S.ContactFormInput
@@ -49,7 +49,7 @@ export function ContactForm() {
           <S.ContactFormInfoDescription>
             {contactFormLocale.aditionalDescription}{" "}
             <S.ContactFormAnchor
-              href="https://www.linkedin.com/in/giordano-spiropulos-8b022419a/"
+              href={contactFormLocale.linkedin}
               target="_blank"
             >
               LinkedIn

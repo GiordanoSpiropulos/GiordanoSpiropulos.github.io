@@ -72,7 +72,7 @@
     ]
   },
   "skills": {
-    "title": "My Skills & Experience",
+    "title": "My Skills",
     "subtitle": "My main focus is front-end development (mobile and web).",
     "description": "Landing Pages, components, librarys, mobile applications and plugins. I have experience in FullStack using .Net Core and Node.",
     "skillsList": [
@@ -125,6 +125,23 @@
         "id": 9,
         "skillImageName": "gatsby",
         "skillDescription": "Gatsby"
+      }
+    ]
+  },
+  "contactForm": {
+    "title": "Contact",
+    "description": "Get in touch with me for more information about projects or if you want to talk!",
+    "aditionalDescription": "If you need to know more about me, you can also access my ",
+    "linkedin": "https://www.linkedin.com/in/giordano-spiropulos-8b022419a/?locale=en_US",
+    "fields": [
+      {
+        "placeholder": "E-mail"
+      },
+      {
+        "placeholder": "Message"
+      },
+      {
+        "placeholder": "Submit"
       }
     ]
   }

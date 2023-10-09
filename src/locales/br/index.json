@@ -72,8 +72,8 @@
     ]
   },
   "skills": {
-    "title": "Minhas habilidades e experiências",
-    "subtitle": "O principal foco da minha experiência é em desenvolvimento front-end (mobile e web).",
+    "title": "Minhas habilidades",
+    "subtitle": "O principal foco das minhas habilidades é em desenvolvimento front-end (mobile e web).",
     "description": "Landing Pages, componentes, bibliotecas, aplicativos e plugins. Também possuo experiência em FullStack em Node e .Net Core",
     "skillsList": [
       {
@@ -132,6 +132,7 @@
     "title": "Contato",
     "description": "Entre em contato comigo para mais informações de projetos ou caso queira conversar!",
     "aditionalDescription": "Se precisar saber mais sobre mim, você também pode acessar meu ",
+    "linkedin": "https://www.linkedin.com/in/giordano-spiropulos-8b022419a/",
     "fields": [
       {
         "placeholder": "Email"

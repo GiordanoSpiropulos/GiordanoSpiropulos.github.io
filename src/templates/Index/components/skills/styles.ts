@@ -13,6 +13,7 @@ export const SkillsContainer = styled.div`
 `;
 
 export const SkillsTitle = styled.h2`
+  margin-top: 80px;
   color: #fff;
   font-size: 28px;
   align-self: center;

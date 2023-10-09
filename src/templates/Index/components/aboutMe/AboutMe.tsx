@@ -10,7 +10,7 @@ export function AboutMe() {
   });
 
   return (
-    <S.AboutMeContainer>
+    <S.AboutMeContainer id="aboutMe">
       <S.WhatIDoContainer>
         {aboutMeLocale.whatIDoCards.map((aboutMeCard: WhatIDoCards) => (
           <S.WhatIDoCard>

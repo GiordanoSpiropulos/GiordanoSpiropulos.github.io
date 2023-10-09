@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 interface Navbar {
   isScrolled: boolean;
@@ -10,12 +10,17 @@ export const GreenSeparator = styled.hr`
 `;
 export const Navbar = styled.nav<Navbar>`
   display: grid;
-  z-index: 5;
+  ${(props) =>
+    props.isScrolled &&
+    css`
+      position: sticky;
+      top: 0px;
+      background-color: #25262a;
+    `}
+  z-index: 999;
   height: 80px;
   grid-template-columns: 1fr 2fr 1fr;
   width: 100%;
-  background-color: ${(props) =>
-    props.isScrolled ? "transparent" : "#2b2f32"};
   @media (max-width: 992px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -31,7 +36,6 @@ export const NavHamburguerMenu = styled.div`
     & button {
       background-color: transparent;
       border: none;
-      color: inherit;
 
       &:hover + & {
         display: inline-block;
@@ -58,8 +62,9 @@ export const NavBrand = styled.div`
   text-align: center;
 `;
 
-export const NavBrandName = styled.span`
+export const NavBrandName = styled.a`
   color: #fff;
+  text-decoration: none;
 `;
 
 export const NavListMenu = styled.ul`

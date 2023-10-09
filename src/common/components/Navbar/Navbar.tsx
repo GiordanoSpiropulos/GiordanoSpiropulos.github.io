@@ -25,7 +25,7 @@ export function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
+    setMenuVisible((prevState) => !prevState);
   };
   return (
     <S.Navbar isScrolled={scrolled}>
@@ -40,7 +40,7 @@ export function Navbar() {
         </button>
         <Dropdown isMenuVisible={menuVisible}>
           <S.NavBrand>
-            <S.NavBrandName>
+            <S.NavBrandName href="#presentation" onClick={toggleMenu}>
               <b>Giordano</b> Spiropulos
             </S.NavBrandName>
             <S.GreenSeparator />
@@ -49,7 +49,9 @@ export function Navbar() {
             {links.map((link) => (
               <>
                 <li key={link.name}>
-                  <a href={link.url}>{link.name}</a>
+                  <a href={link.url} onClick={toggleMenu}>
+                    {link.name}
+                  </a>
                 </li>
                 <S.GreenSeparator />
               </>
@@ -60,7 +62,7 @@ export function Navbar() {
 
       <S.NavInfo>
         <S.NavBrand>
-          <S.NavBrandName>
+          <S.NavBrandName href="#presentation">
             <b>Giordano</b> Spiropulos
           </S.NavBrandName>
         </S.NavBrand>

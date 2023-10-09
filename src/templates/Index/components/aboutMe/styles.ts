@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AboutMeContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
+  min-height: calc(100vh + 80px);
 
   background-color: #25262a;
   padding: 10% 16px 0px;

@@ -15,7 +15,7 @@ export function Presentation() {
 
   const imagePath = "../../../../../static/images/";
   return (
-    <S.Presentation>
+    <S.Presentation id="presentation">
       <S.IndexContainer>
         <S.DummyDiv></S.DummyDiv>
         <S.InfoContainer>
