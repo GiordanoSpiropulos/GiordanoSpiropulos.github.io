@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { ContactFormLocale } from "./contact-form.types";
 
 export function ContactForm() {
-  const [state, handleSubmit] = useForm(`${process.env.GATSBY_FORM_KEY}`);
+  const [state, handleSubmit] = useForm(`xleyppbd`);
   const { t } = useTranslation();
   const contactFormLocale: ContactFormLocale = t("contactForm", {
     returnObjects: true,
