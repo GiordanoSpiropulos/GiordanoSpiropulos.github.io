@@ -39,7 +39,7 @@ jobs:
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v2.0
         with:
-          GATSBY_FORM_KEY: "${{ secrets.GATSBY_FORM_KEY }}"
+          envkey_GATSBY_FORM_KEY: "${{ secrets.GATSBY_FORM_KEY }}"
       - name: Detect package manager
         id: detect-package-manager
         run: |
