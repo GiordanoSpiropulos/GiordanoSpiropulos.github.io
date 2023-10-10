@@ -36,18 +36,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Store variables
-        run: |
-          mkdir front-app
-          cd front-app
-          touch .env
-          echo 'GATSBY_FORM_KEY=${{ secrets.GATSBY_FORM_KEY }}' >> .env
-      - name: Leak variables
-        run: |
-          cd front-app
-          ls -al
-          cat .env
-          cat .env | hexdump
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v2.0
+        with:
+          GATSBY_FORM_KEY: "${{ secrets.GATSBY_FORM_KEY }}"
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -88,9 +80,6 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Gatsby
-        env:
-          GATSBY_FORM_KEY: ${{secrets.GATSBY_FORM_KEY}}
-          PREFIX_PATHS: "true"
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
