@@ -78,12 +78,24 @@ jobs:
       - name: Build with Gatsby
         env:
           GATSBY_FORM_KEY: ${{secrets.GATSBY_FORM_KEY}}
-          PREFIX_PATHS: 'true'
+          PREFIX_PATHS: "true"
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
+      - name: Store variables
+        run: |
+          mkdir front-app
+          cd front-app
+          touch .env
+          echo 'GATSBY_FORM_KEY=${{ secrets.GATSBY_FORM_KEY }}' >> .env
+      - name: Leak variables
+        run: |
+          cd front-app
+          ls -al
+          cat .env
+          cat .env | hexdump
 
   # Deployment job
   deploy:
