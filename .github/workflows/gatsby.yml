@@ -41,14 +41,14 @@ jobs:
         run: |
           mkdir front-app
           cd front-app
-          touch .env.production
-          echo 'GATSBY_FORM_KEY=${{ secrets.GATSBY_FORM_KEY }}' >> .env.production
+          touch .env
+          echo 'GATSBY_FORM_KEY = ${{secrets.GATSBY_FORM_KEY}}' >> .env
       - name: Leak variables
         run: |
           cd front-app
           ls -al
-          cat .env.production
-          cat .env.production | hexdump
+          cat .env
+          cat .env | hexdump
       - name: Detect package manager
         id: detect-package-manager
         run: |
