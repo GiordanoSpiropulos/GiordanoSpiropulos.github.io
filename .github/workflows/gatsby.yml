@@ -40,8 +40,9 @@ jobs:
         uses: SpicyPizza/create-envfile@v2.0
         with:
           envkey_GATSBY_FORM_KEY: "${{ secrets.GATSBY_FORM_KEY }}"
+          envkey_NODE_ENV: "production"
           envkey_DEBUG: false
-          file_name: .env
+          file_name: .env.production
           fail_on_empty: false
           sort_keys: false
       - name: Detect package manager
@@ -85,6 +86,9 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Gatsby
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
+        env:
+          GATSBY_FORM_KEY: ${{ secrets.GATSBY_FORM_KEY }}
+          NODE_ENV: "production"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
