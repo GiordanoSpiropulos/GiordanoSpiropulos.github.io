@@ -2,15 +2,23 @@
   "links": [
     {
       "name": "Home",
-      "url": "#home"
+      "url": "#presentation"
+    },
+    {
+      "name": "About Me",
+      "url": "#aboutMe"
+    },
+    {
+      "name": "Experience",
+      "url": "#experience"
     },
     {
       "name": "Skills",
       "url": "#skills"
     },
     {
-      "name": "Projects",
-      "url": "#projects"
+      "name": "Contact",
+      "url": "#contact"
     }
   ],
   "socials": [
