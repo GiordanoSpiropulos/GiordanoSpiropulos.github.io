@@ -1,7 +1,11 @@
 import React from "react";
-import { GatsbyBrowser } from "gatsby";
 
-import { Layout } from "./src/common/components";
+import { Layout, Navbar } from "./src/common/components";
+import { ThemeProvider } from "styled-components";
+import Theme from "./src/themes/MainTheme";
+import { GlobalStyle } from "./src/common/components/Layout/styles";
+import { I18nextProvider } from "react-i18next";
+import { I18nextContext } from "gatsby-plugin-react-i18next";
 
 export const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
@@ -16,26 +20,17 @@ export const onRenderBody = ({ setHeadComponents }) => {
   ]);
 };
 
-// Adds a class name to the body element
-
-// Wraps every page in a component
-
-// export const wrapPageElement: GatsbyBrowser["wrapPageElement"] = ({
-//   element,
-// }) => {
-//   const newElement = React.cloneElement(
-//     element, // I18nextProvider
-//     element.props,
-//     React.cloneElement(
-//       element.props.children, // I18nextContext.Provider
-//       element.props.children.props,
-//       React.createElement(
-//         Layout,
-//         undefined,
-//         element.props.children.props.children
-//       )
-//     )
-//   );
-
-//   return newElement;
-// };
+export const wrapPageElement = ({ element, props }) => {
+  const Layout =
+    element.props.children.props.children.type.Layout ?? React.Fragment;
+  return (
+    <I18nextProvider i18n={element.props.i18n}>
+      <I18nextContext.Provider value={element.props.children.value}>
+        <ThemeProvider theme={Theme}>
+          <GlobalStyle />
+          <Layout {...props}>{element}</Layout>
+        </ThemeProvider>
+      </I18nextContext.Provider>
+    </I18nextProvider>
+  );
+};

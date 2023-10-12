@@ -1,8 +1,9 @@
 import * as React from "react";
 import { HeadFC, PageProps, graphql } from "gatsby";
 import { IndexTemplate } from "../templates/Index/Index";
+import { Layout } from "@components/index";
 
-const IndexPage: React.FC<PageProps<Queries.IndexPageQueryQuery>> = (props) => {
+const IndexPage = () => {
   return <IndexTemplate></IndexTemplate>;
 };
 
@@ -21,5 +22,5 @@ export const query = graphql`
     }
   }
 `;
-
+IndexPage.Layout = Layout;
 export default IndexPage;
