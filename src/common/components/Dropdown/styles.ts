@@ -7,7 +7,7 @@ export const DropdownContainer = styled.div`
 `;
 
 export const DropdownMenu = styled.div`
-  background-color: #28242c;
+  background-color: ${(props) => props.theme.color.mainBackground};
   padding: 12px 16px;
   position: absolute;
   z-index: 1;

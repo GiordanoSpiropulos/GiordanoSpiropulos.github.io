@@ -7,6 +7,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { useTranslation } from "react-i18next";
 import { MyExperienceLocale } from "./my-experiences.types";
+import Theme from "themes/MainTheme";
 
 export function MyExperiences() {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export function MyExperiences() {
   return (
     <S.MyExperiencesContainer id="experience">
       <S.MyExperiencesTitle>{experienceLocale.title}</S.MyExperiencesTitle>
-      <VerticalTimeline lineColor="#64f4ac">
+      <VerticalTimeline lineColor={Theme.color.primary.main}>
         {experienceLocale.timeline.map((element) => {
           return (
             <VerticalTimelineElement
@@ -28,8 +29,7 @@ export function MyExperiences() {
                 textAlign: "center",
                 display: "flex",
                 justifyContent: "center",
-                boxShadow:
-                  "0 0 0 4px #64f4ac, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)",
+                boxShadow: `0 0 0 4px ${Theme.color.primary.main}, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05)`,
               }}
               contentStyle={{
                 backgroundColor: "#2b2c30",

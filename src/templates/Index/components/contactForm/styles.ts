@@ -2,13 +2,13 @@ import { column } from "@components/Layout/styles";
 import styled, { css } from "styled-components";
 
 const baseInput = css`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.main};
   font-weight: 500;
   font-size: 18px;
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid #64f4ac;
+  border: 2px solid ${(props) => props.theme.color.primary.main};
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -16,11 +16,11 @@ const baseInput = css`
   box-sizing: border-box;
   outline: 0;
   &:focus {
-    border: 2px solid #34f193;
+    border: 2px solid ${(props) => props.theme.color.primary.contrastMain};
   }
 `;
 
-export const ContactFormContainer = styled.div`
+export const ContactFormContainer = styled.section`
   ${column}
   height: 100vh;
   padding: 0 16px;
@@ -41,7 +41,7 @@ export const ContactFormInnerContainer = styled.div`
 `;
 
 export const ContactFormTitle = styled.h2`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.main};
   align-self: center;
 `;
 
@@ -61,19 +61,19 @@ export const ContactFormInfo = styled.div`
 `;
 
 export const ContactFormInfoTitle = styled.span`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   font-size: 32px;
 `;
 
 export const ContactFormInfoDescription = styled.span`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   margin: 50px 0px 25px;
   font-style: italic;
   flex-wrap: nowrap;
 `;
 
 export const ContactFormAnchor = styled.a`
-  color: #64f4ac;
+  color: ${(props) => props.theme.color.primary.main};
   text-decoration: underline;
 `;
 
@@ -84,12 +84,12 @@ export const ContactFormInput = styled.input`
 export const ContactFormTextArea = styled.textarea`
   ${baseInput}
   resize: none;
-  height: 100%;
+  height: 50%;
 `;
 
 export const ContactFormButton = styled.button`
   width: 100%;
-  background: #64f4ac;
+  background: ${(props) => props.theme.color.primary.main};
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -101,6 +101,6 @@ export const ContactFormButton = styled.button`
   margin-top: -4px;
   font-weight: 700;
   &:hover {
-    background: #34f193;
+    background: ${(props) => props.theme.color.primary.contrastMain};
   }
 `;

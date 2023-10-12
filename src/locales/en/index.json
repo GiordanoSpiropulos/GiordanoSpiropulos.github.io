@@ -78,38 +78,38 @@
     "skillsList": [
       {
         "id": 0,
-        "skillImageName": "react",
-        "skillDescription": "React"
+        "skillImageName": "angular",
+        "skillDescription": "Angular"
       },
       {
         "id": 1,
-        "skillImageName": "js",
-        "skillDescription": "Javascript"
+        "skillImageName": "css",
+        "skillDescription": "CSS"
       },
       {
         "id": 2,
-        "skillImageName": "html",
-        "skillDescription": "HTML5"
-      },
-      {
-        "id": 3,
-        "skillImageName": "css",
-        "skillDescription": "CSS3"
-      },
-      {
-        "id": 4,
-        "skillImageName": "storybook",
-        "skillDescription": "Storybook"
-      },
-      {
-        "id": 5,
         "skillImageName": "figma",
         "skillDescription": "Figma"
       },
       {
-        "id": 6,
+        "id": 3,
         "skillImageName": "flutter",
         "skillDescription": "Flutter"
+      },
+      {
+        "id": 4,
+        "skillImageName": "gatsby",
+        "skillDescription": "Gatsby"
+      },
+      {
+        "id": 5,
+        "skillImageName": "html",
+        "skillDescription": "HTML5"
+      },
+      {
+        "id": 6,
+        "skillImageName": "javascript",
+        "skillDescription": "JavaScript"
       },
       {
         "id": 7,
@@ -118,13 +118,13 @@
       },
       {
         "id": 8,
-        "skillImageName": "angular",
-        "skillDescription": "Angular"
+        "skillImageName": "react",
+        "skillDescription": "React"
       },
       {
         "id": 9,
-        "skillImageName": "gatsby",
-        "skillDescription": "Gatsby"
+        "skillImageName": "storybook",
+        "skillDescription": "Storybook"
       }
     ]
   },

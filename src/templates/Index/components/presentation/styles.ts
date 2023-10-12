@@ -1,10 +1,11 @@
 import { orbit } from "@animations/index";
 import styled from "styled-components";
 
-export const Presentation = styled.div`
+export const Presentation = styled.section`
   display: grid;
   min-height: 100vh;
   grid-template-columns: 1fr 1fr;
+  padding: 0 16px;
   overflow: hidden;
   @media (max-width: 992px) {
     grid-template-columns: 1fr;
@@ -19,7 +20,6 @@ export const DummyDiv = styled.div`
 export const InfoContainer = styled.div`
   @media (max-width: 992px) {
     width: 100%;
-    padding: 0 16px;
   }
 `;
 
@@ -34,7 +34,7 @@ export const IndexContainer = styled.div`
 `;
 
 export const GreenContainer = styled.div`
-  background-color: #64f4ac;
+  background-color: ${(props) => props.theme.color.primary.main};
   width: fit-content;
   border-radius: 4px;
   padding: 5px;
@@ -69,7 +69,7 @@ export const ImageCircle = styled.div<{
   left?: string;
 }>`
   position: absolute;
-  background-color: #28242c;
+  background-color: ${(props) => props.theme.color.mainBackground};
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -99,7 +99,7 @@ export const PresentationContainer = styled.div`
 export const PresentationInnerContainer = styled.div`
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   & :first-child {
     font-size: 32px;
   }
@@ -116,7 +116,7 @@ export const PresentationExperience = styled.div`
   }
 `;
 export const WhiteExperienceBold = styled.b`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   margin-right: 15px;
   font-size: 24px;
 `;

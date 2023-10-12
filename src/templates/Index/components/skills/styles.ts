@@ -1,7 +1,7 @@
 import { fadeInUp } from "@animations/fade-animation";
 import styled, { css, keyframes } from "styled-components";
 
-export const SkillsContainer = styled.div`
+export const SkillsContainer = styled.section`
   display: flex;
   flex-direction: column;
   padding: 0px 16px;
@@ -14,13 +14,13 @@ export const SkillsContainer = styled.div`
 
 export const SkillsTitle = styled.h2`
   margin-top: 80px;
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   font-size: 28px;
   align-self: center;
 `;
 
 export const SkillsDescription = styled.span`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   align-self: center;
   margin-bottom: 16px;
   text-align: center;
@@ -58,11 +58,6 @@ export const SkillsList = styled.ul`
   }
 `;
 
-const animationRule = css(
-  ["", " 1s linear;"] as any as TemplateStringsArray,
-  fadeInUp
-);
-
 export const SkillsListItem = styled.li<{
   isInViewPort: boolean;
 }>`
@@ -78,11 +73,16 @@ export const SkillsListItem = styled.li<{
   flex-grow: 1;
   border-radius: 10px;
   padding: 10px;
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
 
   ${(props) =>
     props.isInViewPort &&
     css`
       animation: 1s ${fadeInUp} linear;
     `}
+`;
+
+export const SkillText = styled.span`
+  color: ${(props) => props.theme.color.primary.white};
+  margin-top: 10px;
 `;

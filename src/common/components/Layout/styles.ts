@@ -14,6 +14,7 @@ body,html{
     margin: 0px;
     font-family: 'Roboto Mono';
     background-color: #2b2f32;
+  
 
 }
 

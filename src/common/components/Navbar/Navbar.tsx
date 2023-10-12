@@ -46,15 +46,15 @@ export function Navbar() {
             <S.GreenSeparator />
           </S.NavBrand>
           <S.NavListMenu>
-            {links.map((link) => (
-              <>
+            {links.map((link, index) => (
+              <S.NavListMenuInner id={`${index}`}>
                 <li key={link.name}>
                   <a href={link.url} onClick={toggleMenu}>
                     {link.name}
                   </a>
                 </li>
                 <S.GreenSeparator />
-              </>
+              </S.NavListMenuInner>
             ))}
           </S.NavListMenu>
         </Dropdown>
@@ -68,12 +68,12 @@ export function Navbar() {
         </S.NavBrand>
       </S.NavInfo>
       <S.NavList>
-        {links.map((link) => (
-          <>
+        {links.map((link, index) => (
+          <S.NavListMenuInner id={`${index}`}>
             <li key={link.name}>
               <a href={link.url}>{link.name}</a>
             </li>
-          </>
+          </S.NavListMenuInner>
         ))}
       </S.NavList>
 
@@ -83,10 +83,9 @@ export function Navbar() {
             <StaticImage
               src="../../../images/icons/linkedin.svg"
               alt={socials[0].alt}
-              width={16}
-              height={16}
+              width={42}
+              height={42}
             />
-            <S.SocialInfoText>{socials[0].name}</S.SocialInfoText>
           </S.SocialInfo>
         </a>
         <a href={socials[1].url} target="_blank" rel="noopener noreferrer">
@@ -94,10 +93,9 @@ export function Navbar() {
             <StaticImage
               src="../../../images/icons/github.svg"
               alt={socials[1].alt}
-              width={16}
-              height={16}
+              width={32}
+              height={32}
             />
-            <S.SocialInfoText>{socials[1].name}</S.SocialInfoText>
           </S.SocialInfo>
         </a>
         <a href={socials[2].url} target="_blank" rel="noopener noreferrer">
@@ -105,8 +103,8 @@ export function Navbar() {
             <StaticImage
               src="../../../images/icons/email.svg"
               alt={socials[2].alt}
-              width={16}
-              height={16}
+              width={32}
+              height={32}
             />
           </S.SocialInfo>
         </a>

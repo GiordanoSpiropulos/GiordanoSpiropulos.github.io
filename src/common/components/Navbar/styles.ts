@@ -5,7 +5,7 @@ interface Navbar {
 }
 
 export const GreenSeparator = styled.hr`
-  border: 1px solid #64f4ac;
+  border: 1px solid ${(props) => props.theme.color.primary.main};
   width: 100%;
 `;
 export const Navbar = styled.nav<Navbar>`
@@ -15,7 +15,7 @@ export const Navbar = styled.nav<Navbar>`
     css`
       position: sticky;
       top: 0px;
-      background-color: #25262a;
+      background-color: ${(props) => props.theme.color.contrastBackground};
     `}
   z-index: 999;
   height: 80px;
@@ -63,7 +63,7 @@ export const NavBrand = styled.div`
 `;
 
 export const NavBrandName = styled.a`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   text-decoration: none;
 `;
 
@@ -77,9 +77,9 @@ export const NavListMenu = styled.ul`
   padding: 0px;
 
   a {
-    color: #fff;
+    color: ${(props) => props.theme.color.primary.white};
     &:hover {
-      color: #64f4ac;
+      color: ${(props) => props.theme.color.primary.main};
       ::before {
         margin-right: 5px;
         content: "<";
@@ -99,6 +99,10 @@ export const NavListMenu = styled.ul`
   }
 `;
 
+export const NavListMenuInner = styled.div`
+  width: 100%;
+`;
+
 export const NavList = styled.ul`
   display: flex;
   justify-content: center;
@@ -108,9 +112,9 @@ export const NavList = styled.ul`
   padding: 0px;
 
   a {
-    color: #fff;
+    color: ${(props) => props.theme.color.primary.white};
     &:hover {
-      color: #64f4ac;
+      color: ${(props) => props.theme.color.primary.main};
       ::before {
         margin-right: 5px;
         content: "<";
@@ -152,6 +156,9 @@ export const SocialInfo = styled.div`
 `;
 
 export const SocialInfoText = styled.span`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   margin-left: 10px;
+  @media (max-width: 992px) {
+    display: none;
+  }
 `;

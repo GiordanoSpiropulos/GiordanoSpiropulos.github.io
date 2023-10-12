@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const AboutMeContainer = styled.div`
+export const AboutMeContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: calc(100vh + 80px);
 
-  background-color: #25262a;
+  background-color: ${(props) => props.theme.color.contrastBackground};
   padding: 10% 16px 0px;
 
   @media (max-width: 992px) {
@@ -32,13 +32,13 @@ export const WhatIDoCard = styled.div`
   border-radius: 8px;
   padding: 25px 50px;
   &:nth-child(1n) {
-    color: #fff;
+    color: ${(props) => props.theme.color.primary.white};
   }
 
   &:hover {
     background-color: #2d2e32;
     :nth-child(1n) {
-      color: #64f4ac !important;
+      color: ${(props) => props.theme.color.primary.main} !important;
     }
   }
   @media (max-width: 992px) {
@@ -67,12 +67,12 @@ export const WhoIAmContainer = styled.div`
 `;
 
 export const WhoIAmTitle = styled.span`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   font-size: 32px;
 `;
 
 export const WhoIAmSubtitle = styled.span`
-  color: #fff;
+  color: ${(props) => props.theme.color.primary.white};
   font-size: 24px;
   margin-top: 50px;
   font-style: italic;

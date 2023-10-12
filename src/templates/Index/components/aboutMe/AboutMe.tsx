@@ -12,12 +12,14 @@ export function AboutMe() {
   return (
     <S.AboutMeContainer id="aboutMe">
       <S.WhatIDoContainer>
-        {aboutMeLocale.whatIDoCards.map((aboutMeCard: WhatIDoCards) => (
-          <S.WhatIDoCard>
-            <S.WhatIDoTitle>{aboutMeCard.title}</S.WhatIDoTitle>
-            <S.WhatIDoExtra>{aboutMeCard.extra}</S.WhatIDoExtra>
-          </S.WhatIDoCard>
-        ))}
+        {aboutMeLocale.whatIDoCards.map(
+          (aboutMeCard: WhatIDoCards, index: number) => (
+            <S.WhatIDoCard id={`${aboutMeCard.title}_${index}`}>
+              <S.WhatIDoTitle>{aboutMeCard.title}</S.WhatIDoTitle>
+              <S.WhatIDoExtra>{aboutMeCard.extra}</S.WhatIDoExtra>
+            </S.WhatIDoCard>
+          )
+        )}
       </S.WhatIDoContainer>
       <S.WhoIAmContainer>
         <S.WhoIAmTitle>{aboutMeLocale.whoIAm.title}</S.WhoIAmTitle>

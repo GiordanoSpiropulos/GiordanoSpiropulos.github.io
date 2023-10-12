@@ -28,6 +28,7 @@ export function Skills() {
       query={graphql`
         query Skills {
           skillImage: allFile(
+            sort: { base: ASC }
             filter: {
               extension: { regex: "/(webp)/" }
               base: { regex: "/(white)/" }
@@ -71,7 +72,7 @@ export function Skills() {
                             ?.gatsbyImageData
                         }
                       />
-                      {skills.skillDescription}
+                      <S.SkillText>{skills.skillDescription}</S.SkillText>
                     </S.SkillsListItem>
                   ))}
                 </S.SkillsList>

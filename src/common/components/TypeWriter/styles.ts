@@ -13,7 +13,7 @@ const blinkTextCursor = keyframes`
 `;
 
 export const TextCursor = styled.span`
-  border-right: 2px solid #fff;
+  border-right: 2px solid ${(props) => props.theme.color.primary.white};
   display: inline;
   animation: ${blinkTextCursor} 0.7s steps(44) infinite normal;
 `;
